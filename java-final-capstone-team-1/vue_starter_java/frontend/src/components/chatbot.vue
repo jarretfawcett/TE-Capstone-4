@@ -153,8 +153,8 @@ export default {
       this.closeModal();
       phone = '+1' + phone;
       
-      const accountSid = 'ACb17eece6228a5633f62b48f6052eddc5';
-      const authToken = 'f63a8c1470779bd80dd0be8ef7310b04';
+      const accountSid = 'TwilioAccountID';
+      const authToken = 'TwilioAuthToken';
       const client = require('twilio')(accountSid, authToken);
 
       if (phone.length == 12) {
@@ -245,7 +245,7 @@ export default {
 
 
         this.messages.push({
-            text:'<img src="http://api.wolframalpha.com/v1/simple?appid=PE9ATK-53H98RPU4H&i=' + plussed + '"' + '/>',
+            text:'<img src="http://api.wolframalpha.com/v1/simple?appid=WA-AUTH-TOKENi=' + plussed + '"' + '/>',
             writer: 'server'
         });
               this.autoScroll();
